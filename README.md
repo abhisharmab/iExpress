@@ -1,4 +1,4 @@
 iExpress
 ========
 
-Alert and Communication for ALS Patients using Eye Gaze Technology
+Alert and Communication application for ALS Patients using Eye Gaze Technology
