@@ -4,30 +4,29 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Timeline Table View Controller-->
         <scene sceneID="JGK-D4-MSv">
             <objects>
-                <tableViewController id="hBJ-HD-rRs" sceneMemberID="viewController">
+                <tableViewController id="hBJ-HD-rRs" customClass="TimelineTableViewController" customModule="iExpress" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="165" sectionHeaderHeight="22" sectionFooterHeight="22" id="UR7-d2-S9J">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="165" id="via-tc-3Cs">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="165" id="via-tc-3Cs" customClass="SweetTableViewCell" customModule="iExpress" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="via-tc-3Cs" id="IKw-nH-I6q">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx2-z3-l5P">
-                                            <rect key="frame" x="23" y="8" width="42" height="21"/>
+                                            <rect key="frame" x="23" y="8" width="214" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cOb-Bd-l8l">
-                                            <rect key="frame" x="23" y="37" width="498" height="106"/>
-                                            <color key="backgroundColor" red="0.54901963472366333" green="0.54901963472366333" blue="0.54901963472366333" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="textColor" red="1" green="0.85490196943283081" blue="0.72549021244049072" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOb-Bd-l8l">
+                                            <rect key="frame" x="23" y="37" width="251" height="91"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
@@ -39,6 +38,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="sweetTextView" destination="cOb-Bd-l8l" id="2in-Kj-qwx"/>
+                                    <outlet property="timestampLabel" destination="vBa-Nk-cm2" id="1xo-Sx-lK7"/>
+                                    <outlet property="usernameLabel" destination="dx2-z3-l5P" id="bLq-82-t7C"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -58,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="1042" y="405"/>
         </scene>
-        <!--View Controller-->
+        <!--Compose View Controller-->
         <scene sceneID="XPe-Tj-Q3E">
             <objects>
-                <viewController id="WAB-0N-UkF" sceneMemberID="viewController">
+                <viewController id="WAB-0N-UkF" customClass="ComposeViewController" customModule="iExpress" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Klj-as-6Ic"/>
                         <viewControllerLayoutGuide type="bottom" id="S6p-4O-BPV"/>
@@ -70,15 +74,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ok we got some stuff working." translatesAutoresizingMaskIntoConstraints="NO" id="L7v-ST-vXb">
-                                <rect key="frame" x="16" y="109" width="321" height="170"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3z-bz-EFI">
+                                <rect key="frame" x="28" y="84" width="270" height="183"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="FzW-zV-98Z">
+                        <barButtonItem key="rightBarButtonItem" title="Acknowledge" id="yzR-qy-RaI">
+                            <connections>
+                                <action selector="sendSweet:" destination="WAB-0N-UkF" id="s1f-E6-K7P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sweetTextView" destination="C3z-bz-EFI" id="8dX-Vh-fMP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCN-sn-wCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

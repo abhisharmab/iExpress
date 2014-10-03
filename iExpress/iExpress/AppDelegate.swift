@@ -20,15 +20,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.setApplicationId("GwYPxahcJTgeDwigA7qQLev7zJuGsSN2idpqPZhu", clientKey: "l9ENeza5aLtjggFK6sR5BdXZfnJI5LDFnohhYMAE")
         
-        //var testObject:PFObject = PFObject(className: "TestObject")
-        //testObject.setObject("Neil", forKey: "User")
-        //testObject.saveInBackground()
+        UINavigationBar.appearance().barTintColor = UIColor.orangeColor()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
+        let notificationTypes:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
+        let notificationSettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationTypes, categories: nil)
         
+        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
         
         return true
     }
+    
+    func application(application: UIApplication!, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings!) {
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+    }
+    
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        
+        let currentInstallation:PFInstallation = PFInstallation.currentInstallation()
+        currentInstallation.setDeviceTokenFromData(deviceToken)
+        currentInstallation.addUniqueObject("global", forKey: "channels")
+        currentInstallation.saveInBackground()
+    }
+    
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        print(error.localizedDescription)
+    }
+    
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: NSDictionary) {
 
+        var notification:NSDictionary = userInfo.objectForKey("aps") as NSDictionary
+        
+        if (notification.objectForKey("content-available") != nil){
+            if (notification.objectForKey("content-available")?.isEqualToNumber(1) != nil){
+                NSNotificationCenter.defaultCenter().postNotificationName("reloadTimeLine", object: nil)
+            }
+        }
+        //else
+        //{
+            PFPush.handlePush(userInfo)
+            
+        //}
+
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -104,7 +142,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data Saving support
 
+    
     func saveContext () {
+        
         if let moc = self.managedObjectContext {
             var error: NSError? = nil
             if moc.hasChanges && !moc.save(&error) {

@@ -33,6 +33,9 @@
 		FCDE6C1B19DE5B4B00483AF6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDE6C1A19DE5B4B00483AF6 /* libz.dylib */; };
 		FCDE6C2119DE616800483AF6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDE6C2019DE616800483AF6 /* SystemConfiguration.framework */; };
 		FCDE6C2319DE628500483AF6 /* iExpress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCDE6C2219DE628500483AF6 /* iExpress.storyboard */; };
+		FCDE6C2519DE6EAF00483AF6 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE6C2419DE6EAF00483AF6 /* TimelineTableViewController.swift */; };
+		FCDE6C2719DE6F7600483AF6 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE6C2619DE6F7600483AF6 /* ComposeViewController.swift */; };
+		FCDE6C2B19DE732300483AF6 /* SweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE6C2A19DE732300483AF6 /* SweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		FCDE6C1D19DE5BC500483AF6 /* iExpress-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iExpress-Bridging-Header.h"; sourceTree = "<group>"; };
 		FCDE6C2019DE616800483AF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FCDE6C2219DE628500483AF6 /* iExpress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iExpress.storyboard; sourceTree = "<group>"; };
+		FCDE6C2419DE6EAF00483AF6 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		FCDE6C2619DE6F7600483AF6 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		FCDE6C2A19DE732300483AF6 /* SweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +143,11 @@
 		FCDE6BD419DE512E00483AF6 /* iExpress */ = {
 			isa = PBXGroup;
 			children = (
+				FCDE6C2A19DE732300483AF6 /* SweetTableViewCell.swift */,
 				FCDE6BD719DE512E00483AF6 /* AppDelegate.swift */,
+				FCDE6C2419DE6EAF00483AF6 /* TimelineTableViewController.swift */,
 				FCDE6C2219DE628500483AF6 /* iExpress.storyboard */,
+				FCDE6C2619DE6F7600483AF6 /* ComposeViewController.swift */,
 				FCDE6C1D19DE5BC500483AF6 /* iExpress-Bridging-Header.h */,
 				FCDE6BDC19DE512E00483AF6 /* ViewController.swift */,
 				FCDE6BDE19DE512E00483AF6 /* Main.storyboard */,
@@ -301,8 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCDE6C2719DE6F7600483AF6 /* ComposeViewController.swift in Sources */,
 				FCDE6BDD19DE512E00483AF6 /* ViewController.swift in Sources */,
 				FCDE6BDB19DE512E00483AF6 /* iExpress.xcdatamodeld in Sources */,
+				FCDE6C2519DE6EAF00483AF6 /* TimelineTableViewController.swift in Sources */,
+				FCDE6C2B19DE732300483AF6 /* SweetTableViewCell.swift in Sources */,
 				FCDE6BD819DE512E00483AF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +374,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Abhishek Sharma (389WNLYS3H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Abhishek Sharma (389WNLYS3H)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -382,6 +395,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8c65c2c5-c856-4408-a947-becdefde640c";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -404,7 +418,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Abhishek Sharma (389WNLYS3H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Abhishek Sharma (389WNLYS3H)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -417,6 +432,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "8c65c2c5-c856-4408-a947-becdefde640c";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -519,6 +535,7 @@
 				FCDE6BF619DE512E00483AF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCDE6BF719DE512E00483AF6 /* Build configuration list for PBXNativeTarget "iExpressTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +544,7 @@
 				FCDE6BF919DE512E00483AF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
