@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCCFB87619DF4DEB00314725 /* textfield_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB86C19DF4DEB00314725 /* textfield_background@2x.png */; };
+		FCCFB87719DF4DEB00314725 /* textfield_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB86D19DF4DEB00314725 /* textfield_background.png */; };
+		FCCFB87819DF4DEB00314725 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB86E19DF4DEB00314725 /* second@2x.png */; };
+		FCCFB87919DF4DEB00314725 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB86F19DF4DEB00314725 /* second.png */; };
+		FCCFB87A19DF4DEB00314725 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB87019DF4DEB00314725 /* first@2x.png */; };
+		FCCFB87B19DF4DEB00314725 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB87119DF4DEB00314725 /* first.png */; };
+		FCCFB87C19DF4DEB00314725 /* chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB87219DF4DEB00314725 /* chat@2x.png */; };
+		FCCFB87D19DF4DEB00314725 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB87319DF4DEB00314725 /* chat.png */; };
+		FCCFB87E19DF4DEB00314725 /* background_pattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB87419DF4DEB00314725 /* background_pattern@2x.png */; };
+		FCCFB87F19DF4DEB00314725 /* background_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB87519DF4DEB00314725 /* background_pattern.png */; };
 		FCDE6BD819DE512E00483AF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE6BD719DE512E00483AF6 /* AppDelegate.swift */; };
 		FCDE6BDB19DE512E00483AF6 /* iExpress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCDE6BD919DE512E00483AF6 /* iExpress.xcdatamodeld */; };
 		FCDE6BDD19DE512E00483AF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDE6BDC19DE512E00483AF6 /* ViewController.swift */; };
@@ -49,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FCCFB86C19DF4DEB00314725 /* textfield_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield_background@2x.png"; sourceTree = "<group>"; };
+		FCCFB86D19DF4DEB00314725 /* textfield_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield_background.png; sourceTree = "<group>"; };
+		FCCFB86E19DF4DEB00314725 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		FCCFB86F19DF4DEB00314725 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		FCCFB87019DF4DEB00314725 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		FCCFB87119DF4DEB00314725 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		FCCFB87219DF4DEB00314725 /* chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat@2x.png"; sourceTree = "<group>"; };
+		FCCFB87319DF4DEB00314725 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
+		FCCFB87419DF4DEB00314725 /* background_pattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_pattern@2x.png"; sourceTree = "<group>"; };
+		FCCFB87519DF4DEB00314725 /* background_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_pattern.png; sourceTree = "<group>"; };
 		FCDE6BD219DE512E00483AF6 /* iExpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCDE6BD619DE512E00483AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCDE6BD719DE512E00483AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +141,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FCCFB88019DF4DF100314725 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FCCFB86C19DF4DEB00314725 /* textfield_background@2x.png */,
+				FCCFB86D19DF4DEB00314725 /* textfield_background.png */,
+				FCCFB86E19DF4DEB00314725 /* second@2x.png */,
+				FCCFB86F19DF4DEB00314725 /* second.png */,
+				FCCFB87019DF4DEB00314725 /* first@2x.png */,
+				FCCFB87119DF4DEB00314725 /* first.png */,
+				FCCFB87219DF4DEB00314725 /* chat@2x.png */,
+				FCCFB87319DF4DEB00314725 /* chat.png */,
+				FCCFB87419DF4DEB00314725 /* background_pattern@2x.png */,
+				FCCFB87519DF4DEB00314725 /* background_pattern.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		FCDE6BC919DE512E00483AF6 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +180,7 @@
 		FCDE6BD419DE512E00483AF6 /* iExpress */ = {
 			isa = PBXGroup;
 			children = (
+				FCCFB88019DF4DF100314725 /* Images */,
 				FCDE6C2A19DE732300483AF6 /* SweetTableViewCell.swift */,
 				FCDE6BD719DE512E00483AF6 /* AppDelegate.swift */,
 				FCDE6C2419DE6EAF00483AF6 /* TimelineTableViewController.swift */,
@@ -289,10 +327,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCFB87E19DF4DEB00314725 /* background_pattern@2x.png in Resources */,
+				FCCFB87619DF4DEB00314725 /* textfield_background@2x.png in Resources */,
+				FCCFB87F19DF4DEB00314725 /* background_pattern.png in Resources */,
+				FCCFB87919DF4DEB00314725 /* second.png in Resources */,
+				FCCFB87819DF4DEB00314725 /* second@2x.png in Resources */,
+				FCCFB87C19DF4DEB00314725 /* chat@2x.png in Resources */,
+				FCCFB87719DF4DEB00314725 /* textfield_background.png in Resources */,
+				FCCFB87B19DF4DEB00314725 /* first.png in Resources */,
 				FCDE6BE019DE512E00483AF6 /* Main.storyboard in Resources */,
 				FCDE6C2319DE628500483AF6 /* iExpress.storyboard in Resources */,
+				FCCFB87A19DF4DEB00314725 /* first@2x.png in Resources */,
 				FCDE6BE519DE512E00483AF6 /* LaunchScreen.xib in Resources */,
 				FCDE6BE219DE512E00483AF6 /* Images.xcassets in Resources */,
+				FCCFB87D19DF4DEB00314725 /* chat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

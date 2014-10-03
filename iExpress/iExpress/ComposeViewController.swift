@@ -38,6 +38,7 @@ class ComposeViewController: UIViewController {
         if sweetTextView.text.isEmpty
         {
             sweetTextView.text = "On my way!"
+            internal_tweets["content"] = sweetTextView.text
         }
             
         else
