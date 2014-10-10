@@ -31,17 +31,6 @@
                                             <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOb-Bd-l8l">
-                                            <rect key="frame" x="18" y="47" width="290" height="91"/>
-                                            <color key="backgroundColor" red="0.36078432202339172" green="0.36078432202339172" blue="0.36078432202339172" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="290" id="Rrv-eN-Uuh"/>
-                                                <constraint firstAttribute="height" constant="91" id="oAJ-eq-zy1"/>
-                                            </constraints>
-                                            <color key="textColor" red="0.5647059083" green="0.93333333730000001" blue="0.5647059083" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBa-Nk-cm2">
                                             <rect key="frame" x="172" y="7" width="136" height="21"/>
                                             <constraints>
@@ -51,6 +40,17 @@
                                             <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOb-Bd-l8l">
+                                            <rect key="frame" x="8" y="46" width="290" height="91"/>
+                                            <color key="backgroundColor" red="0.36078432202339172" green="0.36078432202339172" blue="0.36078432202339172" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="290" id="Rrv-eN-Uuh"/>
+                                                <constraint firstAttribute="height" constant="91" id="oAJ-eq-zy1"/>
+                                            </constraints>
+                                            <color key="textColor" red="0.5647059083" green="0.93333333730000001" blue="0.5647059083" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="cOb-Bd-l8l" firstAttribute="leading" secondItem="IKw-nH-I6q" secondAttribute="leadingMargin" constant="10" id="DPb-vM-s3U"/>
@@ -108,7 +108,7 @@
                                 <rect key="frame" x="-12" y="64" width="624" height="536"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3z-bz-EFI">
-                                <rect key="frame" x="16" y="115" width="285" height="73"/>
+                                <rect key="frame" x="21" y="115" width="285" height="73"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.5647059083" green="0.93333333730000001" blue="0.5647059083" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>

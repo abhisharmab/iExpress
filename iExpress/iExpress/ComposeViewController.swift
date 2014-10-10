@@ -12,6 +12,7 @@ class ComposeViewController: UIViewController {
 
     @IBOutlet weak var sweetTextView: UITextView! = UITextView()
     
+    let MAXLENGTH = 140;
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -37,7 +38,7 @@ class ComposeViewController: UIViewController {
         
         if sweetTextView.text.isEmpty
         {
-            sweetTextView.text = "On my way!"
+            sweetTextView.text = "Got your message!!"
             internal_tweets["content"] = sweetTextView.text
         }
             
@@ -46,8 +47,15 @@ class ComposeViewController: UIViewController {
             internal_tweets["content"] = sweetTextView.text
         }
         
+        var userName:String = "NewAnonymousUser"
+        if PFUser.currentUser() != nil{
+            userName = PFUser.currentUser().username
+        }
+
+        internal_tweets["sender"] = userName
+        internal_tweets.saveInBackground()
         
-        internal_tweets["sender"] = "suzzane" //PFUser.currentUser() Change this later on to PFUser.CurrentUser()
+        /*
         internal_tweets.saveInBackgroundWithBlock {
             (success: Bool!, error: NSError!) -> Void in
             if (success != nil) {
@@ -55,20 +63,21 @@ class ComposeViewController: UIViewController {
             } else {
                 NSLog("%@", error)
             }
-        }
+        }*/
         
         var push:PFPush = PFPush()
         push.setChannel("global")
         
-
         
-        var data:NSDictionary = ["alert":sweetTextView.text, "badge":"0", "sound":"."]
+        var data:NSDictionary = ["alert":PFUser.currentUser().username + ": " + sweetTextView.text, "badge":"0","sound":"chime","title":PFUser.currentUser().username]
         push.setData(data)
         push.sendPushInBackground()
         
         self.navigationController?.popToRootViewControllerAnimated(true)
         
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

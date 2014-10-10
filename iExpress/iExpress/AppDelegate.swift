@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         //else
         //{
-            PFPush.handlePush(userInfo)
+            PFPush.handlePush(userInfo) //Doing this currently so it acts as a ACK to Suzzane or the CareGiver
             
         //}
 
