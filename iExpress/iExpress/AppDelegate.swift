@@ -54,14 +54,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         var notification:NSDictionary = userInfo.objectForKey("aps") as NSDictionary
         
+        /** Abhi - Check with Douglas on the Windows Side
         if (notification.objectForKey("content-available") != nil){
             if (notification.objectForKey("content-available")?.isEqualToNumber(1) != nil){
                 NSNotificationCenter.defaultCenter().postNotificationName("reloadTimeLine", object: nil)
             }
         }
         //else
-        //{
-            PFPush.handlePush(userInfo) //Doing this currently so it acts as a ACK to Suzzane or the CareGiver
+        //{*/
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("reloadTimeLine", object: nil)
+        
+        PFPush.handlePush(userInfo) //Doing this currently so it acts as a ACK to Suzzane or the CareGiver
             
         //}
 

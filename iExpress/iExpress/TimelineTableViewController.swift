@@ -10,6 +10,9 @@ import UIKit
 
 class TimelineTableViewController: UITableViewController {
     
+    @IBOutlet weak var Refresh: UIBarButtonItem!
+
+    
     var timelineData: NSMutableArray = NSMutableArray()
     
     override func viewDidLoad() {
@@ -18,6 +21,7 @@ class TimelineTableViewController: UITableViewController {
         
         self.loadData()
         
+        //Abhi
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadData", name: "reloadTimeLine", object: nil)
         
         // Uncomment the following line to preserve selection between presentations
@@ -28,6 +32,10 @@ class TimelineTableViewController: UITableViewController {
     }
     
     
+    @IBAction func RefershPage(sender: AnyObject) {
+        loadData()
+    }
+   
     func loadData()
     {
         timelineData.removeAllObjects()
@@ -50,8 +58,6 @@ class TimelineTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
-        
-        
         
     }
     
