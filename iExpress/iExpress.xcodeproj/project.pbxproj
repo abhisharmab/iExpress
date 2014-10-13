@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FC22BF3E19E7890A00FB1B02 /* img-thing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC22BF3D19E7890A00FB1B02 /* img-thing.jpg */; };
+		FC6B4FED19EB47DB00FD672F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC6B4FEC19EB47DB00FD672F /* Settings.bundle */; };
+		FC6B4FEF19EB69F600FD672F /* emergency.caf in Resources */ = {isa = PBXBuildFile; fileRef = FC6B4FEE19EB69F500FD672F /* emergency.caf */; };
 		FCCFB87619DF4DEB00314725 /* textfield_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB86C19DF4DEB00314725 /* textfield_background@2x.png */; };
 		FCCFB87719DF4DEB00314725 /* textfield_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB86D19DF4DEB00314725 /* textfield_background.png */; };
 		FCCFB87819DF4DEB00314725 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCFB86E19DF4DEB00314725 /* second@2x.png */; };
@@ -61,6 +63,8 @@
 
 /* Begin PBXFileReference section */
 		FC22BF3D19E7890A00FB1B02 /* img-thing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img-thing.jpg"; sourceTree = "<group>"; };
+		FC6B4FEC19EB47DB00FD672F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FC6B4FEE19EB69F500FD672F /* emergency.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = emergency.caf; sourceTree = "<group>"; };
 		FCCFB86C19DF4DEB00314725 /* textfield_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield_background@2x.png"; sourceTree = "<group>"; };
 		FCCFB86D19DF4DEB00314725 /* textfield_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield_background.png; sourceTree = "<group>"; };
 		FCCFB86E19DF4DEB00314725 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 		FCDE6BD419DE512E00483AF6 /* iExpress */ = {
 			isa = PBXGroup;
 			children = (
+				FC6B4FEE19EB69F500FD672F /* emergency.caf */,
 				FCCFB88019DF4DF100314725 /* Images */,
 				FCDE6C2A19DE732300483AF6 /* SweetTableViewCell.swift */,
 				FCDE6BD719DE512E00483AF6 /* AppDelegate.swift */,
@@ -204,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				FCDE6BD619DE512E00483AF6 /* Info.plist */,
+				FC6B4FEC19EB47DB00FD672F /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -337,7 +343,9 @@
 				FCCFB87819DF4DEB00314725 /* second@2x.png in Resources */,
 				FCCFB87C19DF4DEB00314725 /* chat@2x.png in Resources */,
 				FCCFB87719DF4DEB00314725 /* textfield_background.png in Resources */,
+				FC6B4FEF19EB69F600FD672F /* emergency.caf in Resources */,
 				FCCFB87B19DF4DEB00314725 /* first.png in Resources */,
+				FC6B4FED19EB47DB00FD672F /* Settings.bundle in Resources */,
 				FCDE6BE019DE512E00483AF6 /* Main.storyboard in Resources */,
 				FC22BF3E19E7890A00FB1B02 /* img-thing.jpg in Resources */,
 				FCDE6C2319DE628500483AF6 /* iExpress.storyboard in Resources */,

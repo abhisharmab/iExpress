@@ -90,9 +90,9 @@ class TimelineTableViewController: UITableViewController {
                 PFUser.logInWithUsernameInBackground(usernameTextfield.text, password: passwordTextfield.text){
                     (user:PFUser!, error:NSError!)->Void in
                     if user != nil{
-                        println("Login successfull")
+                        //println("Login successfull")
                     }else{
-                        println("Login failed")
+                        //println("Login failed")
                         loginAlert.message = "Username/Password Incorrect"
                         self.presentViewController(loginAlert, animated: true, completion: nil)
                     }
@@ -121,7 +121,7 @@ class TimelineTableViewController: UITableViewController {
                     else
                     {
                         let errorString = error.localizedDescription
-                        println(errorString)
+                        //println(errorString)
                         
                         loginAlert.message = "Username taken. Choose another"
                         self.presentViewController(loginAlert, animated: true, completion: nil)
