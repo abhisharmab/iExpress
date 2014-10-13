@@ -17,11 +17,9 @@ class TimelineTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         self.loadData()
         
-        //Abhi
+        //Abhi - For Auto-Refresh on Push Notification. Eliminating additional clicks for the User
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadData", name: "reloadTimeLine", object: nil)
         
         // Uncomment the following line to preserve selection between presentations
